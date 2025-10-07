@@ -1,0 +1,29 @@
+{
+  "name": "sds-full-stack-repository",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix ./finalProject/server && npm install --prefix ./finalProject/client && npm install --prefix ./exerciseProjects/Express && npm install --prefix ./exerciseProjects/MongoDB && npm install --prefix ./exerciseProjects/NodeJs && npm install --prefix ./exerciseProjects/react",
+    "ExerciseProject:Express": "cd ./exerciseProjects/Express && npm run dev",
+    "ExerciseProject:MongoDB": "cd ./exerciseProjects/MongoDB && npm run dev",
+    "ExerciseProject:Node": "cd ./exerciseProjects/NodeJs && npm run dev",
+    "ExerciseProject:React": "cd ./exerciseProjects/react && npm run dev",
+    "FinalProject:Dev": "concurrently \"npm run FinalProject:Server\" \"npm run FinalProject:Client\"",
+    "FinalProject:Server": "cd ./finalProject/server && npm run dev",
+    "FinalProject:Client": "cd ./finalProject/client && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoniSeppala/sds-full-stack-repository.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RoniSeppala/sds-full-stack-repository/issues"
+  },
+  "homepage": "https://github.com/RoniSeppala/sds-full-stack-repository#readme",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

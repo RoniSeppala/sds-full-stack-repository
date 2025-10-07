@@ -1,0 +1,16 @@
+{
+  "name": "mogngodb",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mongoose": "^8.18.3",
+    "sds-full-stack-repository": "file:../.."
+  }
+}
